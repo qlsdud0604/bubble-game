@@ -33,6 +33,10 @@ public class BackgroundPlayerService implements Runnable {
 			if (bottomColor != -2) {
 				// System.out.println("바닥 충돌");
 				player.setDown(false);
+			} else {
+				if (!player.isUp() && !player.isDown()) {
+					player.down();
+				}
 			}
 
 			/** 외벽 충돌 감지 */
