@@ -56,6 +56,10 @@ public class BubbleFrame extends JFrame {
 						player.up();
 					}
 					break;
+				case 65:
+					Bubble bubble = new Bubble(player);
+					add(bubble);
+					break;
 				}
 			}
 
